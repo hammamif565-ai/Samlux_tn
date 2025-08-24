@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر Samlux</title>
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #111, #444);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 0.8rem;
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    .price {
+      font-size: 1.1rem;
+      color: #e91e63;
+      margin: 0.5rem 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #1ebd58;
+    }
+    .about {
+      background: #fff;
+      padding: 2rem 1rem;
+      margin: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .about h2 {
+      margin-bottom: 1rem;
+    }
+    .social {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .social a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      background: #333;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .social a.instagram { background: #E1306C; }
+    .social a.facebook { background: #1877f2; }
+    .social a.whatsapp { background: #25d366; }
+    .social a:hover { opacity: 0.8; }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 1rem;
+      background: #111;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <h1>🛍️ متجر Samlux</h1>
+    <p>أفضل الملابس و الإكسسوارات في تونس 🇹🇳</p>
+  </header>
+
+  <!-- قسم المنتجات -->
+  <section class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=ساعة+يد" alt="ساعة يد">
+      <h3>ساعة يد أنيقة</h3>
+      <p class="price">50 دينار</p>
+      <a class="btn" href="https://wa.me/21612345678?text=أريد%20طلب%20ساعة%20يد%20أنيقة">اطلب عبر واتساب</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=حقيبة+نسائية" alt="حقيبة نسائية">
+      <h3>حقيبة نسائية</h3>
+      <p class="price">80 دينار</p>
+      <a class="btn" href="https://wa.me/21612345678?text=أريد%20طلب%20حقيبة%20نسائية">اطلب عبر واتساب</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=T-Shirt" alt="تيشرت">
+      <h3>تيشرت رجالي</h3>
+      <p class="price">40 دينار</p>
+      <a class="btn" href="https://wa.me/21612345678?text=أريد%20طلب%20تيشرت%20رجالي">اطلب عبر واتساب</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=نظارات+شمسية" alt="نظارات شمسية">
+      <h3>نظارات شمسية</h3>
+      <p class="price">60 دينار</p>
+      <a class="btn" href="https://wa.me/21612345678?text=أريد%20طلب%20نظارات%20شمسية">اطلب عبر واتساب</a>
+    </div>
+
+  </section>
+
+  <!-- من نحن -->
+  <section class="about">
+    <h2>من نحن؟</h2>
+    <p>متجر <b>Samlux</b> يوفر لكم أحدث صيحات الموضة من ملابس و إكسسوارات بجودة عالية وأسعار مناسبة. هدفنا هو راحتكم ورضاكم 🌟</p>
+  </section>
+
+  <!-- تواصل اجتماعي -->
+  <div class="social">
+    <a class="instagram" href="https://instagram.com/yourshop" target="_blank">Instagram</a>
+    <a class="facebook" href="https://facebook.com/yourshop" target="_blank">Facebook</a>
+    <a class="whatsapp" href="https://wa.me/21612345678" target="_blank">WhatsApp</a>
+  </div>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2025 متجر Samlux - جميع الحقوق محفوظة</p>
+  </footer>
+
+</body>
+        </html>
